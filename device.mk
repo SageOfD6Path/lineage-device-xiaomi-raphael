@@ -239,7 +239,7 @@ PRODUCT_COPY_FILES += \
 
 # GMS Permissions
 PRODUCT_COPY_FILES += \
-		$(LOCAL_PATH)/configs/permissions/privapp-permissions-gms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp.permissions-gms.xml
+        $(LOCAL_PATH)/configs/permissions/privapp-permissions-gms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp.permissions-gms.xml
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -583,5 +583,12 @@ PRODUCT_COPY_FILES += \
 
 # Preopt System Apps
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-	  SystemUI \
-	  Settings
+      SystemUI \
+      Settings
+
+# Ship custom packages
+
+ifeq ($(WITH_GAPPS),true)
+
+PRODUCT_PACKAGES += \
+    RedunantPackagesGapps
