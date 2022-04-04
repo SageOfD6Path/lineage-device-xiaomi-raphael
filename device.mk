@@ -588,7 +588,5 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Ship custom packages
 
-ifeq ($(WITH_GAPPS),true)
-
 PRODUCT_PACKAGES += \
-    RedunantPackagesGapps
+    RedunantPackagesGapps 
