@@ -13,12 +13,13 @@
 # limitations under the License.
 
 # Inherit
+
 $(call inherit-product, device/xiaomi/raphael/device.mk)
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 
-PRODUCT_NAME := aosp_raphael
+PRODUCT_NAME := havoc_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
@@ -31,27 +32,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Flags
-
-TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_BLUR := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BUILD_GRAPHENEOS_CAMERA := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_SUPPORTS_NOW_PLAYING := true
-
-EXTRA_UDFPS_ANIMATIONS := true
-EXTRA_FOD_ANIMATIONS := true
-
-ARCANA_MAINTAINER := Irongfly
-ARCANA_DEVICE := raphael
-ARCANA_OFFICIAL := true
-
-PREBUILT_LAWNCHAIR := false
-COPY_APN_SYSTEM := true
-USE_PIXEL_CHARGER_IMAGES := true
-
-RAVEN_LAIR := Official

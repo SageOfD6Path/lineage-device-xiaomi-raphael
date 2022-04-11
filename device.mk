@@ -585,8 +585,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
       SystemUI \
       Settings
-
-# Ship custom packages
-
-PRODUCT_PACKAGES += \
-    RedunantPackagesGapps 

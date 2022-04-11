@@ -133,3 +133,15 @@ persist.timed.enable=true
 
 # WiFi
 config.disable_rtt=true
+
+# Log
+ro.control_privapp_permissions=log
+
+# Havoc Props
+
+# CI Props
+
+ro.havoc.device.name=Xiaomi Redmi K20 Pro / Mi 9T Pro
+ro.havoc.group.url=https://t.me/+VOHKrvv_of5GmJET 
+ro.havoc.maintainer=Sukeerat Singh Goindi
+ro.havoc.maintainer.username=Irongfly
