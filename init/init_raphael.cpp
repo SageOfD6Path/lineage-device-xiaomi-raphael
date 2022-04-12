@@ -105,24 +105,22 @@ void vendor_load_properties() {
     if (region == "GLOBAL") {
         model = "Mi 9T Pro";
         device = "raphael";
+        description = "raphael-user 11 RKQ1.200826.002 V12.5.2.0.RFKMIXM release-keys";
         mod_device = "raphael_global";
     } else if (region == "CN") {
         model = "Redmi K20 Pro";
         device = "raphael";
+        description = "raphael-user 11 RKQ1.200826.002 V12.5.5.0.RFKCNXM release-keys";
     } else if (region == "INDIA") {
         model = "Redmi K20 Pro";
         device = "raphaelin";
+        description = "raphaelin-user 11 RKQ1.200826.002 V12.5.1.0.RFKINXM release-keys";
         mod_device = "raphaelin_in_global";
     }
 
     property_override("ro.apex.updatable", "false");
 
     // SafetyNet workaround
-   
-    fingerprint = "google/raven/raven:12/SP2A.220405.004/8233519:user/release-keys";
-    description = "raven-user 12 SP2A.220405.004 8233519 release-keys" ;
-   
-    set_ro_build_prop("fingerprint", fingerprint);
     property_override("ro.boot.verifiedbootstate", "green");
 
     set_ro_product_prop("device", device);
