@@ -13,7 +13,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_raphael.mk
+    $(LOCAL_DIR)/lineage_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_raphael-userdebug
+    lineage_raphael-userdebug

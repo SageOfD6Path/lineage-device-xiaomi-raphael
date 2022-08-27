@@ -15,11 +15,51 @@
 # Inherit
 
 $(call inherit-product, device/xiaomi/raphael/device.mk)
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# maintainer flag (one word only/no spacing)
+
+RICE_MAINTAINER := ΛＲＣＨＩＴΣＣＴツ(@SageOfD6Path)
+
+# chipset flag (one word only/no spacing)
+
+RICE_CHIPSET := msmnile
+
+# gapps build flag, if not defined build type is vanilla
+
+WITH_GMS := true
+
+# Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
+
+SUSHI_BOOTANIMATION := 1080
+
+# Graphene Camera
+
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
+
+# disable/enable blur support, default is false
+
+TARGET_ENABLE_BLUR := true
+
+# UDFPS ICONS/ANIMATIONS
+
+TARGET_HAS_UDFPS := true
+
+# UDFPS animations
+
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Quick tap feature
+
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Face Unlock
+
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
 
-PRODUCT_NAME := havoc_raphael
+PRODUCT_NAME := lineage_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
